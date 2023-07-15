@@ -30,6 +30,17 @@ const ServiceCard = ({ index, title, icon }) => {
 }
 
 const About = () => {
+  const buttonVariants = {
+    initial: {
+      scale: 1,
+    },
+    hover: {
+      scale: 1.1,
+    },
+    pressed: {
+      scale: 0.9,
+    },
+  };
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -44,6 +55,16 @@ const About = () => {
         I am a passionate game developer with a strong focus on creating immersive experiences using Unreal Engine 5.2. With two years of experience in the industry, I have honed my skills and developed a deep understanding of the engine's capabilities and its potential for pushing the boundaries of gaming. <br className="sm:block hidden" />
         As a game developer, I thrive in collaborative environments and have proven myself to be a valuable asset in team settings. I am well-versed in working with multidisciplinary teams, including artists, designers, and programmers, to bring innovative game concepts to life. Through effective communication and a cooperative mindset, I strive to foster an environment that promotes creativity, productivity, and ultimately, the delivery of high-quality games.
       </motion.p>
+      <motion.button
+        variants={[fadeIn("", "", 0.1, 1), buttonVariants]}
+        initial="initial"
+        whileHover="hover"
+        whileTap="pressed"
+        className="mt-10 rounded-md w-20 h-20 bg-tertiary text-white border-secondary text-lg"
+        onClick={() => window.open("https://drive.google.com/file/d/1StNuTFSUPHkxCUh-SGz8RaY_FmWzFxTA/view?usp=drive_link", "_blank")}
+      >
+        Resume
+      </motion.button>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
