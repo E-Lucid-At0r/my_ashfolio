@@ -61,7 +61,7 @@ const About = () => {
         whileHover="hover"
         whileTap="pressed"
         className="mt-10 rounded-md w-20 h-20 bg-tertiary text-white border-secondary text-lg"
-        onClick={() => window.open("https://drive.google.com/file/d/1StNuTFSUPHkxCUh-SGz8RaY_FmWzFxTA/view?usp=drive_link", "_blank")}
+        onClick={() => window.open("https://drive.google.com/file/d/1VifmYSrBsLZgq5bvEyQY9oMptpJiHs4q/view?usp=sharing", "_blank")}
       >
         Resume
       </motion.button>

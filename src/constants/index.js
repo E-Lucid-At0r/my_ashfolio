@@ -208,7 +208,7 @@ const projects = [
   {
     name: "Atari Breakout 3D",
     description:
-      "A simple remake of a very old retro game Atari Breakout, but in 3D, A game made in Unreal Engine 5.",
+      "A simple remake of a very old retro game Atari Breakout, but in 3D, A game made in Unreal Engine 5. The main objective of this game is to clear all levels and reach the final level, while getting the highest score.",
     tags: [
       {
         name: "ue5",
@@ -233,7 +233,7 @@ const projects = [
   {
     name: "Zombie Slayer",
     description:
-      "Zombie Slayer is a third-person survival horror game, made in Unreal Engine 5.",
+      "Zombie Slayer is a third-person arcade survival horror game, made in Unreal Engine 5. The main objective of this game is to kill zombies which randomly spawn in the level, and try to score the highest.",
     tags: [
       {
         name: "ue5",
@@ -249,11 +249,9 @@ const projects = [
       },
     ],
     image: zombieslayer,
-    icon: github,
-    icon_2: itchio,
-    source_code_link: "https://github.com/",
-    source_code_link_2: "https://lucid-works.itch.io/zombie-slayer",
-    gamedev: true,
+    icon: itchio,
+    source_code_link: "https://lucid-works.itch.io/zombie-slayer",
+    gamedev: false,
   },
   {
     name: "G2M Playground Game Exercise",
